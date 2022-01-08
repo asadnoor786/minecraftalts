@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("https://i.ibb.co/zPKtKxp/background.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+#generate-field {
+  width: 100%;
+  height: auto;
+}
+.account-history {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  min-height: 80%;
+}
+.generator {
+  max-height: auto;
+  min-height: 500px;
+  background: rgba(122, 255, 182, 0.096);
+}
+.input-container {
+  float: left;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: 20px;
+  height: 60px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  border: 3px solid #fff;
+}
+input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+.copy-button {
+  border: none;
+  color: #fff;
+  background-color: transparent;
+}
+.btn {
+  height: 55px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+}
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.services-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 300px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  flex: 0 0 30%;
+  transition: all 400ms ease-in-out;
+}
+.support-container {
+  height: 100vh;
+}
+.services-items:hover {
+  background-color: rgba(0, 0, 0, 0.671);
+}
+.about-us {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  transition: all 400ms ease-in-out;
+}
+.about-us:hover {
+  background-color: rgba(0, 0, 0, 0.671);
+}
+.about-tittle {
+  background-color: rgba(0, 0, 0, 0.671);
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Device Responsive*/
+@media (max-width: 1199px) {
+  .services-items {
+    flex: 0 0 40%;
+  }
+  .support-container {
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .services-items {
+    flex: 0 0 90%;
+  }
+}

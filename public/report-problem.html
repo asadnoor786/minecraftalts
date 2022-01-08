@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report Problem</title>
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome Icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/report-problem.css" />
+  </head>
+  <body>
+    <!-- Navbar start here -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow">
+      <div class="container">
+        <a class="navbar-brand fs-3 fw-bold" href="#">Report A Problem</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/dashboard"
+                >Dashbaord</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/freeGenerator">Generators</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/aboutUs">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Login/Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end here -->
+    <main
+      id="generate-field"
+      class="container d-flex justify-content-center mt-5"
+    >
+      <form method="post" class="generator row justify-content-between w-100 rounded-3 p-3">
+        <div class="col-md-7">
+          <div class="title">
+            <h4 class="fw-bold text-light text-center">
+              Any Problem?, We'll ,Fix It.
+            </h4>
+          </div>
+          <div class="input-container p-3">
+            <i class="fas fa-user ico me-2" aria-hidden="true"></i>
+            <input
+              class="input-field"
+              maxlength="100"
+              size="40"
+              autocomplete="off"
+              placeholder="Your Name"
+              type="text"
+              placeholder="Username"
+              id="input1"
+              name="name"
+              required
+            />
+          </div>
+          <div class="input-container p-3">
+            <i class="fas fa-envelope ico ico me-2" aria-hidden="true"></i>
+            <input
+              class="input-field"
+              maxlength="100"
+              size="40"
+              type="email"
+              autocomplete="off"
+              placeholder="Your Email Address"
+              type="text"
+              placeholder="Username"
+              name="email"
+              id="input2"
+              required
+            />
+          </div>
+          <div class="input-container p-3">
+            <input
+              class="input-field"
+              maxlength="100"
+              size="40"
+              autocomplete="off"
+              type="text"
+              placeholder="Your Problem Is related To?"
+              name="topic"
+              id="input3"
+              required
+            />
+          </div>
+          <div class="input-container p-3">
+            <input
+              class="input-field"
+              maxlength="500"
+              size="40"
+              autocomplete="off"
+              placeholder="Explain Your Problem"
+              type="text"
+              name="problem"
+              id="input4"
+              required
+            />
+          </div>
+          <button class="btn btn-success w-100 mt-3">Submit Problem</button>
+        </div>
+        <div class="col-md-4 mt-5 mt-md-0">
+          <h3 class="fw-bold text-center text-light">Our Commitment</h3>
+          <div class="account-history rounded-3" id="accss">
+            <h5 class="text-center text-light">
+              <br><br>
+              We Will Fix Your Problem Within 24 Hours Of Submission.
+            </h5>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <!-- Bootstrap JS bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>  </body>
+</html>

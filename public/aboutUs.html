@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome Icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("IMG/generator.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+#generate-field {
+  width: 100%;
+  height: auto;
+}
+.account-history {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  min-height: 80%;
+}
+.generator {
+  max-height: auto;
+  min-height: 500px;
+  background: rgba(122, 255, 182, 0.096);
+}
+.input-container {
+  float: left;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: 20px;
+  height: 60px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  border: 3px solid #fff;
+}
+input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+.copy-button {
+  border: none;
+  color: #fff;
+  background-color: transparent;
+}
+.btn {
+  height: 55px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+}
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.services-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 300px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  flex: 0 0 30%;
+  transition: all 400ms ease-in-out;
+}
+.support-container {
+  height: 100vh;
+}
+.services-items:hover {
+  background-color: rgba(0, 0, 0, 0.671);
+}
+.about-us {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  transition: all 400ms ease-in-out;
+}
+.about-us:hover {
+  background-color: rgba(0, 0, 0, 0.671);
+}
+.about-tittle {
+  background-color: rgba(0, 0, 0, 0.671);
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Device Responsive*/
+@media (max-width: 1199px) {
+  .services-items {
+    flex: 0 0 40%;
+  }
+  .support-container {
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .services-items {
+    flex: 0 0 90%;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <!-- Navbar start here -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow">
+      <div class="container">
+        <a class="navbar-brand fs-3 fw-bold" href="#">About Us</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/dashboard"
+                >Dashbaord</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/freeGenerator">Generators</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/aboutUs">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Login/Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end here -->
+    <main class="container">
+      <section class="support-container">
+        <div class="d-flex justify-content-center mt-5">
+          <h1 class="fw-bold text-light about-tittle">Why we're the best</h1>
+        </div>
+        <div class="services-container gap-3 my-5">
+          <div class="services-items text-light gap-3 rounded-3 p-3">
+            <i class="fas fa-comments" style="font-size: 4rem"></i>
+            <h4 class="fw-bold">24/7 Support</h4>
+            <p>
+              Our staff team will be able to help you out anytime if you have
+              questions about our free account generator or if something doesn't
+              work as it should.
+            </p>
+          </div>
+          <div class="services-items text-light gap-3 rounded-3 p-3">
+            <i class="fas fa-code" style="font-size: 4rem"></i>
+            <h4 class="fw-bold">24/7 Support</h4>
+            <p>
+              Our staff team will be able to help you out anytime if you have
+              questions about our free account generator or if something doesn't
+              work as it should.
+            </p>
+          </div>
+          <div class="services-items text-light gap-3 rounded-3 p-3">
+            <i class="fas fa-brush" style="font-size: 4rem"></i>
+            <h4 class="fw-bold">24/7 Support</h4>
+            <p>
+              Our staff team will be able to help you out anytime if you have
+              questions about our free account generator or if something doesn't
+              work as it should.
+            </p>
+          </div>
+          <div class="services-items text-light gap-3 rounded-3 p-3">
+            <i class="fas fa-sync-alt" style="font-size: 4rem"></i>
+            <h4 class="fw-bold">24/7 Support</h4>
+            <p>
+              Our staff team will be able to help you out anytime if you have
+              questions about our free account generator or if something doesn't
+              work as it should.
+            </p>
+          </div>
+          <div class="services-items text-light gap-3 rounded-3 p-3">
+            <i class="fas fa-gift" style="font-size: 4rem"></i>
+            <h4 class="fw-bold">24/7 Support</h4>
+            <p>
+              Our staff team will be able to help you out anytime if you have
+              questions about our free account generator or if something doesn't
+              work as it should.
+            </p>
+          </div>
+          <div class="services-items text-light gap-3 rounded-3 p-3">
+            <i class="fas fa-check-double" style="font-size: 4rem"></i>
+            <h4 class="fw-bold">24/7 Support</h4>
+            <p>
+              Our staff team will be able to help you out anytime if you have
+              questions about our free account generator or if something doesn't
+              work as it should.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="d-flex justify-content-center">
+          <h1 class="fw-bold text-light about-tittle">About Us</h1>
+        </div>
+        <div class="row justify-content-around p-5">
+          <div class="col-12 col-lg-5 about-us text-light my-5">
+            <h5 class="about-tittle fw-bold">Why choose us?</h5>
+            <p>
+              There are lots of reasons why we are better than our competition!
+              Before even trying to deliver you an account, our system checks
+              the alts very carefully so you get the best quality accounts on
+              the market. We do not hide the account data behind time limited
+              "Tokens" like our competition does, you can use them forever as
+              long the password doesn't change! But the most important thing
+              about our generator is our staff team that is always going to help
+              you if you are having a hard time and if you ever forget an alt
+              info, you can easily load it again with our integrated account
+              history!
+            </p>
+          </div>
+          <div class="col-12 col-lg-5 about-us text-light my-5">
+            <h5 class="about-tittle fw-bold">Why did we start?</h5>
+            <p>
+              We started this for the people who cannot afford Minecraft or are
+              not old enough to own a credit card to buy it. When we first
+              started and looked at what our competition is offering we knew
+              that we can do better! And here we are, we are the best free alt
+              generator out there with 2 daily refills, full access generators
+              and many more! With a community bigger than 100,000 people and a
+              big staff team, we are happy to do the work for you so you don't
+              have to spend any money! You wont find any downloadable viruses,
+              pornography ads or harmful things on our website! We promise!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bootstrap JS bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

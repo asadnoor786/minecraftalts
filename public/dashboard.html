@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/dashboard.css">
+    <script src="JS/dashboard.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{Welcome User}</title>
+</head>
+<body onload="loadBody()" id="bodyy">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer data-deferred="1"></script>
+    <div id="particles-js" class="particles1"></div>
+    <div id="header">
+        <button id="btn1" onclick="menuOpen()"></button>
+        <button id="btn2" onclick="menuOpen()"></button>
+        <button id="btn3" onclick="menuOpen()"></button>
+        <img src="" id="ico">
+        <ul id="ul">
+            <a href="/dashboard"><li>Dashboard</li></a>
+            <a href="/freeGenerator"><li>Generators</li></a>
+            <a href="/aboutUs"><li>About Us</li></a>
+            <a href="/reportProblem"><li>Report Problem</li></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><li>Youtube</li></a>
+        </ul>
+    </div>
+    <div id="menu">
+        <ul id="ul1">
+            <a href="/dashboard"><li>Dashboard</li></a>
+            <a href="/freeGenerator"><li>Generators</li></a>
+            <a href="/aboutUs"><li>About Us</li></a>
+            <a href="/reportProblem"><li>Report Problem</li></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><li>Youtube</li></a>
+        </ul>
+    </div>
+    <div id="generated-today">
+        <span id="today-num">0</span>
+        <span id="total-text">Total Alts Generated Today</span>
+        <meter id="meter1"></meter>
+    </div>
+    <div id="total-generated">
+        <span id="total-num">0</span>
+        <span id="total-text">Total Alts Generated</span>
+        <meter id="meter2"></meter>
+    </div>
+    <div id="total-left">
+        <span id="pre-total-num">0</span>
+        <span id="total-text">Total Alts Left</span>
+        <meter id="meter3"></meter>
+    </div>
+        <div id="close" onclick="closeMenu()"></div>
+        <div id="refill-message">
+            <span id="refill-text">Notifications</span>
+            <iframe id="refill-container">
+            </iframe>
+         </div>
+        <div id="welcome-message">
+           <span id="logout-text">Want To Leave This Place?</span>
+           <button id="logout-btn">Logout</button>
+        </div>
+        <div id="advertisement"><center><big><big>Advertisement</big></big></center></div>
+</body>
+</html>
