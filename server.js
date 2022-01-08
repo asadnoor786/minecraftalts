@@ -12,7 +12,7 @@ var emailsender = mailer.createTransport({
     requireTLS: true,
     auth :{
         user : "educationalmirchi@gmail.com",
-        pass : "Shaguftanaz@123"
+        pass : "Shaguftanaz@1234"
     }
 });
 const bodyParser = require("body-parser");
